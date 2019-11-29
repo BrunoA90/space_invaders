@@ -74,6 +74,7 @@ function create() {
   player = game.add.sprite(400, 500, "ship");
   player.anchor.setTo(0.5, 0.5);
   game.physics.enable(player, Phaser.Physics.ARCADE);
+  player.body.collideWorldBounds = true;
 
   //  The baddies!
   aliens = game.add.group();
